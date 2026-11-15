@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Slopcord</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Slopcord">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#e3e5e8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1e1f22">
+
+<style>
+:root{--bg:#fff;--bg2:#f2f3f5;--bg3:#e3e5e8;--tx:#313338;--mut:#5c5e66;--hov:#d9dbde;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--bg3);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#313338;--bg2:#2b2d31;--bg3:#1e1f22;--tx:#dbdee1;--mut:#949ba4;--hov:#393c41;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#313338;--bg2:#2b2d31;--bg3:#1e1f22;--tx:#dbdee1;--mut:#949ba4;--hov:#393c41;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--tx);font-family:"gg sans","Segoe UI",system-ui,-apple-system,sans-serif;font-size:16px}
+button,input{font-family:inherit;color:inherit}
+:focus-visible{outline:2px solid #5865f2;outline-offset:2px}
+.app{display:flex;height:100%;position:relative;overflow:hidden}
+.side{display:flex;flex:none}
+.rail{width:72px;background:var(--bg3);display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px 0;overflow-y:auto}
+.sv{width:48px;height:48px;border-radius:50%;border:0;background:var(--bg);color:var(--tx);font-size:18px;font-weight:600;cursor:pointer;transition:border-radius .15s,background .15s}
+.sv:hover,.sv.on{border-radius:16px;background:var(--c);color:#fff}
+.chs{width:240px;background:var(--bg2);display:flex;flex-direction:column}
+.chs h2{margin:0;padding:0 16px;height:48px;line-height:48px;font-size:15px;border-bottom:1px solid var(--bg3)}
+.chl{flex:1;overflow-y:auto;padding:8px}
+.ch{display:block;width:100%;text-align:left;border:0;background:none;color:var(--mut);padding:8px 10px;border-radius:4px;font-size:15px;font-weight:500;cursor:pointer}
+.ch:hover,.ch.on{background:var(--hov);color:var(--tx)}
+.me{display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--bg3)}
+.main{flex:1;min-width:0;display:flex;flex-direction:column;background:var(--bg)}
+.top{display:flex;align-items:center;gap:10px;padding:0 12px;height:48px;border-bottom:1px solid var(--bg3);font-weight:600;flex:none}
+.menu{display:none;border:0;background:none;font-size:22px;cursor:pointer;padding:4px 8px}
+.msgs{flex:1;overflow-y:auto;padding:16px 0}
+.m{display:flex;gap:12px;padding:2px 16px}
+.m.f{margin-top:14px}
+.m:hover{background:var(--bg2)}
+.av{width:40px;height:40px;border-radius:50%;flex:none;display:grid;place-items:center;color:#fff;font-weight:600}
+.sp{width:40px;flex:none}
+.nm{font-weight:600}
+.tm{color:var(--mut);font-size:12px;margin-left:8px}
+.tx{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.4}
+.empty{color:var(--mut);padding:0 16px}
+.cmp{padding:0 16px 16px;flex:none}
+.cmp input{width:100%;box-sizing:border-box;border:0;border-radius:8px;background:var(--bg3);padding:12px 14px;font-size:16px}
+.mem{width:240px;background:var(--bg2);padding:16px 8px;overflow-y:auto;flex:none}
+.mem p{margin:0 8px 8px;color:var(--mut);font-size:13px}
+.mem .me{background:none;border-radius:4px}
+.scrim{display:none}
+@media(max-width:900px){.mem{display:none}}
+@media(max-width:700px){
+.menu{display:block}
+.side{position:absolute;inset:0 auto 0 0;transform:translateX(-100%);transition:transform .2s;z-index:5}
+.app.open .side{transform:none}
+.app.open .scrim{display:block;position:absolute;inset:0;background:rgba(0,0,0,.5);z-index:4}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.auth{position:absolute;inset:0;z-index:10;display:grid;place-items:center;background:var(--bg3);padding:16px;overflow:auto}
+[hidden]{display:none!important}
+.card{width:100%;max-width:380px;background:var(--bg);border-radius:8px;padding:24px;box-sizing:border-box}
+.card h1{margin:0 0 4px;font-size:24px}
+.card p{color:var(--mut);margin:0 0 16px}
+.card input{width:100%;box-sizing:border-box;border:0;border-radius:4px;background:var(--bg3);padding:12px;font-size:16px;margin-bottom:12px}
+.btn{width:100%;border:0;border-radius:4px;background:#5865f2;color:#fff;padding:12px;font-size:16px;font-weight:600;cursor:pointer}
+.lnk{background:none;border:0;color:#5865f2;cursor:pointer;padding:8px 0;font-size:14px}
+.err{color:#da373c;min-height:20px;font-size:14px;margin:0 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.chip{border:0;border-radius:12px;background:var(--bg3);padding:6px 10px;cursor:pointer;font-size:14px}
+.rules{list-style:none;margin:0 0 12px;padding:0;font-size:14px;color:var(--mut)}
+.rules li::before{content:"○ "}
+.rules li.ok{color:#3ba55d}
+.rules li.ok::before{content:"✓ "}
+.logo{margin-left:auto;border:0;background:none;cursor:pointer;font-size:18px;font-weight:800;letter-spacing:.5px;color:#5865f2;padding:4px 6px}
+.logo span{display:inline-block}
+.logo.go span{animation:hop .5s ease calc(var(--i)*60ms)}
+@keyframes hop{0%,100%{transform:none;color:#5865f2}40%{transform:translateY(-9px) rotate(-10deg);color:#eb459e}}
+@media(prefers-reduced-motion:reduce){.logo.go span{animation:none}}
+.chl .lnk{display:block;padding:12px 10px 0;text-align:left}
+.card .lnk{display:block}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="side">
+    <nav class="rail" id="rail" aria-label="Servers"></nav>
+    <aside class="chs">
+      <h2 id="sn"></h2>
+      <div class="chl" id="chl"></div>
+      <div class="me"><div class="av" id="mav"></div><div><div class="nm" id="mnm"></div><div class="tm" style="margin:0">Online</div></div><button class="lnk" id="sw" style="margin-left:auto" title="Switch or add account">Switch</button></div>
+    </aside>
+  </div>
+  <div class="scrim" id="scrim"></div>
+  <main class="main">
+    <header class="top"><button class="menu" id="menu" aria-label="Open servers and channels">☰</button><span id="cn"></span><button class="logo" id="logo" aria-label="Slopcord"></button></header>
+    <div class="msgs" id="msgs"></div>
+    <div class="cmp"><input id="in" autocomplete="off" enterkeyhint="send"></div>
+  </main>
+  <aside class="mem" id="mem"></aside>
+  <div class="auth" id="srv" hidden>
+    <div class="card">
+      <h1 id="sh">Create a server</h1>
+      <p id="sp">Pick a name for your server.</p>
+      <input id="sname" maxlength="30" placeholder="Server name" autocomplete="off">
+      <div class="err" id="serr" role="alert"></div>
+      <button class="btn" id="sgo">Create server</button>
+      <button class="lnk" id="sal"></button>
+      <button class="lnk" id="scx">Cancel</button>
+    </div>
+  </div>
+  <div class="auth" id="auth" hidden>
+    <div class="card">
+      <h1>Slopcord</h1>
+      <p id="ah"></p>
+      <div class="chips" id="chips"></div>
+      <input id="em" type="email" placeholder="Email" autocomplete="email" autocapitalize="none" hidden>
+      <input id="un" placeholder="Username" autocomplete="username" autocapitalize="none">
+      <input id="cd" inputmode="numeric" maxlength="6" placeholder="6-digit code" autocomplete="one-time-code" hidden>
+      <input id="pw" type="password" placeholder="Password" autocomplete="current-password">
+      <ul class="rules" id="rules" hidden><li id="r1">At least 8 characters</li><li id="r2">A number or symbol, like 1 or @</li></ul>
+      <div class="err" id="err" role="alert"></div>
+      <button class="btn" id="ago"></button>
+      <button class="lnk" id="fgt">Forgot password?</button>
+      <button class="lnk" id="alt"></button>
+    </div>
+  </div>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const h=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+const DS=[];
+// Email codes: paste your EmailJS values between the quotes. Leave empty to skip email checks.
+const MAIL={service:'service_st7evwk',template:'template_2dnlf7o',key:'wwgkFI5ZxceSrYYp5'};
+const mailOn=()=>!!(MAIL.service&&MAIL.template&&MAIL.key);
+let pend=null;
+const PAL=['#5865f2','#3ba55d','#eb459e','#e67e22','#3498db','#9b59b6','#e74c3c'];
+const ld=(k,d)=>{try{const r=localStorage.getItem(k);return r?JSON.parse(r):d}catch(e){return d}};
+const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+let U=ld('slopcord:users',{}),M=ld('slopcord:msgs',{}),nav=ld('slopcord:nav',{sv:'',ch:''}),me=ld('slopcord:me',null),mode='in';
+if(me&&!U[me])me=null;
+let CS=ld('slopcord:servers',[]);const all=()=>DS.concat(CS);
+const code=()=>(Math.random().toString(36)+'000000').slice(2,8).toUpperCase();
+if(CS.some(v=>!v.k)){CS.forEach(v=>{if(!v.k){v.k=code();v.m=[v.o]}});put('slopcord:servers',CS)}
+const vis=()=>DS.concat(CS.filter(x=>x.m.includes(me)));
+const col=n=>U[n]?U[n].c:'#747f8d';
+const key=()=>nav.sv+'/'+nav.ch;
+const tm=ts=>new Date(ts).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});
+const okPw=p=>({a:p.length>=8,b:/[^\p{L}\s]/u.test(p)});
+function rules(){const r=okPw($('#pw').value);$('#r1').className=r.a?'ok':'';$('#r2').className=r.b?'ok':''}
+const hx=async(p,s)=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s+p)))].map(x=>x.toString(16).padStart(2,'0')).join('');
+
+function drawMsgs(){
+  const box=$('#msgs'),ms=M[key()]||[];
+  box.replaceChildren();
+  if(!ms.length)box.append(h('p','empty',nav.sv?'This is the start of #'+nav.ch+'. Send the first message.':'You’re not in a server yet. Tap + in the server list to create one, or join one with an invite code.'));
+  ms.forEach((m,i)=>{
+    const p=ms[i-1],f=!p||p.u!==m.u||m.ts-p.ts>3e5,row=h('div','m'+(f?' f':''));
+    if(f){const a=h('div','av',m.u[0].toUpperCase());a.style.background=col(m.u);row.append(a)}else row.append(h('div','sp'));
+    const b=h('div');
+    if(f){const hd=h('div');hd.append(h('span','nm',m.u),h('span','tm',tm(m.ts)));b.append(hd)}
+    b.append(h('div','tx',m.t));row.append(b);box.append(row);
+  });
+  box.scrollTop=box.scrollHeight;
+}
+function render(){
+  const s=vis().find(x=>x.id===nav.sv)||vis()[0]||{id:'',n:'No servers yet',ch:[],m:me?[me]:[]},r=$('#rail'),l=$('#chl'),m=$('#mem');
+  if(nav.sv!==s.id)nav={sv:s.id,ch:s.ch[0]||''};
+  r.replaceChildren();l.replaceChildren();m.replaceChildren();
+  vis().forEach(v=>{
+    const b=h('button','sv'+(v.id===nav.sv?' on':''),v.i);
+    b.style.setProperty('--c',v.c);b.title=v.n;b.setAttribute('aria-label',v.n);
+    b.onclick=()=>{nav={sv:v.id,ch:v.ch[0]};put('slopcord:nav',nav);render()};
+    r.append(b);
+  });
+  const ad=h('button','sv','+');ad.title='Create a server';ad.setAttribute('aria-label','Create a server');ad.style.setProperty('--c','#3ba55d');
+  ad.onclick=()=>{if(!me)return;smode='new';sUI();$('#srv').hidden=false;$('#sname').focus()};r.append(ad);
+  $('#sn').textContent=s.n;
+  s.ch.forEach(c=>{
+    const b=h('button','ch'+(c===nav.ch?' on':''),'# '+c);
+    b.onclick=()=>{nav.ch=c;put('slopcord:nav',nav);$('#app').classList.remove('open');render()};
+    l.append(b);
+  });
+  if(s.k){const iv=h('button','lnk','Invite code: '+s.k);iv.onclick=async()=>{try{await navigator.clipboard.writeText(s.k);iv.textContent='Copied '+s.k}catch(e){}};l.append(iv)}
+  $('#cn').textContent=s.id?'# '+nav.ch:'';$('#in').disabled=!s.id;
+  $('#in').placeholder=s.id?'Message #'+nav.ch:'Create or join a server to chat';
+  const names=s.m||Object.keys(U);
+  m.append(h('p','',(s.m?'Members, ':'On this device, ')+names.length));
+  names.forEach(n=>{
+    const row=h('div','me'),a=h('div','av',n[0].toUpperCase());a.style.background=col(n);
+    row.append(a,h('span','nm',n+(n===me?' (you)':'')));m.append(row);
+  });
+  const mv=$('#mav');mv.textContent=me?me[0].toUpperCase():'';mv.style.background=col(me);
+  $('#mnm').textContent=me||'';
+  drawMsgs();
+}
+const MODES={
+  in:{t:()=>Object.keys(U).length?'Tap an account to switch, or log in.':'Log in to continue.',v:'un pw fgt chips',go:'Log in',alt:'Need an account? Create one'},
+  up:{t:()=>'Create a new account.',v:'em un pw rules',go:'Create account',alt:'Already have an account? Log in'},
+  vc:{t:()=>'Enter the 6-digit code we emailed to '+pend.e+'. Check spam if you don’t see it.',v:'cd',go:'Verify email',alt:'Back'},
+  fp:{t:()=>'Enter your account email and we’ll send you a code.',v:'em',go:'Send code',alt:'Back to log in'},
+  rc:{t:()=>'Enter the code we emailed to '+pend.e+' (check spam if it’s missing), then a new password.',v:'cd pw rules',go:'Reset password',alt:'Back to log in'}
+};
+function authUI(){
+  const d=MODES[mode],v=d.v.split(' ');
+  $('#auth').hidden=false;
+  $('#ah').textContent=d.t();$('#ago').textContent=d.go;$('#alt').textContent=d.alt;
+  ['un','pw','em','cd','rules','chips','fgt'].forEach(i=>$('#'+i).hidden=!v.includes(i));
+  $('#err').textContent='';$('#pw').value='';$('#cd').value='';
+  $('#pw').placeholder=mode==='rc'?'New password':'Password';
+  $('#pw').autocomplete=mode==='in'?'current-password':'new-password';
+  $('#un').placeholder=mode==='in'?'Username or email':'Username';rules();
+  const c=$('#chips');c.replaceChildren();
+  if(mode==='in')Object.keys(U).forEach(n=>{const b=h('button','chip',n);b.onclick=()=>login(n);c.append(b)});
+}
+function login(n){me=n;put('slopcord:me',n);$('#auth').hidden=true;$('#un').value='';$('#pw').value='';$('#cd').value='';render()}
+const say=m=>{$('#err').textContent=m};
+const salt=()=>[...crypto.getRandomValues(new Uint32Array(2))].join('-');
+async function sendCode(to){
+  const c=String(crypto.getRandomValues(new Uint32Array(1))[0]%1000000).padStart(6,'0');
+  const r=await fetch('https://api.emailjs.com/api/v1.0/email/send',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({service_id:MAIL.service,template_id:MAIL.template,user_id:MAIL.key,template_params:{to_email:to,code:c,app:'Slopcord'}})});
+  if(!r.ok)throw new Error(r.status+' '+(await r.text()).slice(0,120));
+  return c;
+}
+async function sendTo(em,next){
+  const b=$('#ago');b.disabled=true;
+  try{pend.c=await sendCode(em);pend.x=Date.now()+6e5;mode=next;authUI()}
+  catch(x){say('Couldn’t send the email ('+(x.message||'network error')+'). Check the address and try again.')}
+  b.disabled=false;
+}
+async function finish(){
+  const s=salt(),n=pend.n;
+  U[n]={s,e:pend.e,v:mailOn()?1:0,h:await hx(pend.p,s),c:PAL[Object.keys(U).length%PAL.length]};
+  put('slopcord:users',U);pend=null;login(n);
+}
+async function go(){
+  if(!window.crypto||!crypto.subtle)return say('Accounts need a secure (https) page.');
+  say('');
+  if(mode==='in'){
+    const n=$('#un').value.trim().toLowerCase(),p=$('#pw').value;
+    const k=Object.keys(U).find(x=>x.toLowerCase()===n||(U[x].e&&U[x].e===n));
+    if(!k||await hx(p,U[k].s)!==U[k].h)return say('Wrong username, email or password.');
+    login(k);
+  }else if(mode==='up'){
+    const n=$('#un').value.trim(),p=$('#pw').value,em=$('#em').value.trim().toLowerCase();
+    if(!/^[\w.-]{3,20}$/.test(n))return say('Username: 3 to 20 letters, numbers, dots, dashes or underscores.');
+    if(Object.keys(U).some(x=>x.toLowerCase()===n.toLowerCase()))return say('That username is taken.');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em))return say('Enter a valid email address.');
+    if(Object.values(U).some(u=>u.e===em))return say('That email already has an account.');
+    const r=okPw(p);if(!r.a||!r.b)return say('Password needs 8+ characters and a number or symbol like @.');
+    pend={n,p,e:em};
+    if(!mailOn())return finish();
+    await sendTo(em,'vc');
+  }else if(mode==='vc'){
+    if(Date.now()>pend.x)return say('That code expired. Go back and try again.');
+    if($('#cd').value.trim()!==pend.c)return say('That code is not right.');
+    await finish();
+  }else if(mode==='fp'){
+    const em=$('#em').value.trim().toLowerCase();
+    if(!mailOn())return say('Email sending isn’t set up yet. Add your EmailJS keys to the app file first.');
+    const k=Object.keys(U).find(x=>U[x].e===em);
+    if(!k)return say('No account uses that email.');
+    pend={u:k,e:em};await sendTo(em,'rc');
+  }else if(mode==='rc'){
+    if(Date.now()>pend.x)return say('That code expired. Go back and try again.');
+    if($('#cd').value.trim()!==pend.c)return say('That code is not right.');
+    const p=$('#pw').value,r=okPw(p);
+    if(!r.a||!r.b)return say('Password needs 8+ characters and a number or symbol like @.');
+    const u=U[pend.u],n=pend.u;u.s=salt();u.h=await hx(p,u.s);put('slopcord:users',U);pend=null;login(n);
+  }
+}
+$('#ago').onclick=go;
+$('#pw').oninput=rules;
+['un','pw','em','cd'].forEach(i=>$('#'+i).onkeydown=e=>{if(e.key==='Enter')go()});
+$('#fgt').onclick=()=>{mode='fp';authUI()};
+$('#alt').onclick=()=>{mode={in:'up',up:'in',vc:'up'}[mode]||'in';authUI()};
+$('#sw').onclick=()=>{me=null;put('slopcord:me',null);mode='in';authUI()};
+$('#in').onkeydown=e=>{
+  const v=e.target.value.trim();
+  if(e.key!=='Enter'||!v||!me||!nav.sv)return;
+  (M[key()]=M[key()]||[]).push({u:me,t:v,ts:Date.now()});put('slopcord:msgs',M);
+  e.target.value='';drawMsgs();
+};
+let smode='new';
+function sUI(){const j=smode==='join';$('#sh').textContent=j?'Join a server':'Create a server';$('#sp').textContent=j?'Enter the invite code from a friend.':'Pick a name for your server.';$('#sname').placeholder=j?'Invite code':'Server name';$('#sgo').textContent=j?'Join server':'Create server';$('#sal').textContent=j?'Want to create one instead?':'Have an invite code? Join a server';$('#sname').value='';$('#serr').textContent=''}
+$('#sal').onclick=()=>{smode=smode==='join'?'new':'join';sUI();$('#sname').focus()};
+function jn(){
+  const e=$('#serr'),c=$('#sname').value.trim().toUpperCase(),v=CS.find(x=>x.k===c);
+  if(!v){e.textContent='No server with that code.';return}
+  if(!v.m.includes(me)){v.m.push(me);put('slopcord:servers',CS)}
+  nav={sv:v.id,ch:v.ch[0]};put('slopcord:nav',nav);$('#srv').hidden=true;$('#app').classList.remove('open');render();
+}
+function mk(){if(smode==='join'){jn();return}
+  const n=$('#sname').value.trim(),e=$('#serr');
+  if(n.length<2){e.textContent='Name needs at least 2 characters.';return}
+  if(all().some(x=>x.n.toLowerCase()===n.toLowerCase())){e.textContent='That server name is taken.';return}
+  const v={id:'s'+Date.now(),n,i:[...n][0].toUpperCase(),c:PAL[(CS.length+3)%PAL.length],o:me,k:code(),m:[me],ch:['general']};
+  CS.push(v);put('slopcord:servers',CS);nav={sv:v.id,ch:'general'};put('slopcord:nav',nav);
+  $('#srv').hidden=true;$('#app').classList.remove('open');render();
+}
+$('#sgo').onclick=mk;
+$('#sname').onkeydown=e=>{if(e.key==='Enter')mk()};
+$('#scx').onclick=()=>{$('#srv').hidden=true};
+const lg=$('#logo');[...'Slopcord'].forEach((c,i)=>{const s=h('span','',c);s.style.setProperty('--i',i);lg.append(s)});
+const hop=()=>{lg.classList.remove('go');void lg.offsetWidth;lg.classList.add('go')};
+lg.onclick=hop;
+$('#menu').onclick=()=>$('#app').classList.add('open');
+$('#scrim').onclick=()=>$('#app').classList.remove('open');
+render();
+if(!me){mode=Object.keys(U).length?'in':'up';authUI()}
+hop();
+</script>
+</body>
+</html>
